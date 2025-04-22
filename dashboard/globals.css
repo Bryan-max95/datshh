@@ -1,0 +1,51 @@
+/* src/app/dashboard/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1A1A1A;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip {
+  @apply invisible absolute bg-[#2D2D2D] text-white text-sm p-2 rounded shadow-lg;
+}
+
+.group:hover .tooltip {
+  @apply visible z-50;
+}
+
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply w-full text-left border-collapse;
+}
+
+.table th, .table td {
+  @apply py-3 px-4 border-t border-[#8B0000]/50;
+}
+
+.table th {
+  @apply text-gray-400 font-semibold;
+}
+
+.table td {
+  @apply text-white;
+}
+
+.pagination {
+  @apply flex justify-center items-center gap-4 mt-4;
+}
+
+.pagination button {
+  @apply bg-[#8B0000] text-white px-4 py-2 rounded hover:bg-[#A50000];
+}
+
+.pagination span {
+  @apply text-gray-400;
+}
